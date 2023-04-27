@@ -1,4 +1,5 @@
 install.packages("here")
+install.packages("testthat")
 #("C:/InterviewTask/Data/scenario_FE_SHAPE-final.RData")
 library(here) # for easy and clear relative paths
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) # set work directory to this file
@@ -6,6 +7,7 @@ here::i_am("TaskReadme.txt")
 library(data.table)
 #library(reshape2)
 library(tidyverse)
+library(RUnit)
 
 source("utils.R") # common utility functions for this repository
 source("calculator_utils.R") # specific model utility functions
