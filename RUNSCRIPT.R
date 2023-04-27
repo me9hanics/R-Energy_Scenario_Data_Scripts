@@ -18,5 +18,6 @@ comb12 = full_join(dle, scenario)
 combined = full_join(comb12,energy)
 combined %>% group_by(model, scenario, iso, variable, year) %>% dplyr::summarize(model = paste(na.omit(model)), scenario = paste(na.omit(scenario)), iso = paste(na.omit(iso)), variable = paste(na.omit(variable)), year = paste(na.omit(year)))
 
-
+capture.output(combined, file = "output.csv")
+capture.output(combined, file = "output_txt.txt")
 
