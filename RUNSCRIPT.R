@@ -5,6 +5,7 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) # set work directory
 here::i_am("TaskReadme.txt")
 
 library(readr) #For storing large data into .csv files
+library(R.utils)
 
 source("utils.R") # common utility functions for this repository
 source("calculator_utils.R") # specific model utility functions
